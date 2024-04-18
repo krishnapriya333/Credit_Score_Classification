@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Credit Score Prediction</title>
+    <link rel="stylesheet" href = "/static/css/style.css">
+</head>
+<body background="/static/images/credit_score.jpg">
+    <div class="testbox">
+        <form action="/predict" method="POST" >
+            <div class="banner">
+                <h1 id ="heading">Credit Score Prediction</h1>
+                <h3 id = "input">Enter the Features</h3>
+            </div>
+            <div class ="item">
+                <label for="Annual_Income">Annual_Income</label>
+                <input type="text" id="Annual_Income" name="Annual_Income">  
+            </div>
+            <div class="item">
+                <label for="Monthly_Inhand_Salary">Monthly_Inhand_Salary</label>
+                <input type="text" id="Monthly_Inhand_Salary" name="Monthly_Inhand_Salary">  
+            </div>
+            <div class="item">
+                <label for="Num_Bank_Accounts">Num_Bank_Accounts</label>
+                <input type="text" id="Num_Bank_Accounts" name="Num_Bank_Accounts">  
+            </div>
+            <div class="item">
+                <label for="Num_Credit_Card">Num_Credit_Card</label>
+                <input type="text" id="Num_Credit_Card" name="Num_Credit_Card">  
+            </div>
+            <div class="item">
+                <label for="Interest_Rate">Interest_Rate</label>
+                <input type="text" id="Interest_Rate" name="Interest_Rate">  
+            </div>
+            <div class="item">
+                <label for="Num_of_Loan">Num_of_Loan</label>
+                <input type="text" id="Num_of_Loan" name="Num_of_Loan">  
+            </div>
+            <div class="item">
+                <label for="Delay_from_due_date">Delay_from_due_date</label>
+                <input type="text" id="Delay_from_due_date" name="Delay_from_due_date">  
+            </div>
+            <div class="item">
+                <label for="Num_of_Delayed_Payment">Num_of_Delayed_Payment</label>
+                <input type="text" id="Num_of_Delayed_Payment" name="Num_of_Delayed_Payment">  
+            </div>
+            <div class="item">
+                <label for="Changed_Credit_Limit">Changed_Credit_Limit</label>
+                <input type="text" id="Changed_Credit_Limit" name="Changed_Credit_Limit">  
+            </div>
+            <div class="item">
+                <label for="Num_Credit_Inquiries">Num_Credit_Inquiries</label>
+                <input type="text" id="Num_Credit_Inquiries" name="Num_Credit_Inquiries">  
+            </div>
+            <div class="item">
+                <label for="Credit_Mix">Credit_Mix</label>
+                <select id="Credit_Mix" name="Credit_Mix">  
+                  <option disabled selected value> -- select an option -- </option>
+                  <option value="0">Bad</option>
+                  <option value="1">Standard</option>
+                  <option value="2">Good</option>
+                </select>
+            </div>
+            <div class="item">
+                <label for="Outstanding_Debt">Outstanding_Debt</label>
+                <input type="text" id="Outstanding_Debt" name="Outstanding_Debt">  
+            </div>
+            <div class="item">
+                <label for="Credit_Utilization_Ratio">Credit_Utilization_Ratio</label>
+                <input type="text" id="Credit_Utilization_Ratio" name="Credit_Utilization_Ratio">  
+            </div>
+            <div class="item">
+                <label for="Credit_History_Age">Credit_History_Age</label>
+                <input type="text" id="Credit_History_Age" name="Credit_History_Age">  
+            </div>
+            <div class="item">
+                <label for="Monthly_Balance">Monthly_Balance</label>
+                <input type="text" id="Monthly_Balance" name="Monthly_Balance">  
+            </div>
+            <div class="btn-block">
+                <button type="submit" href="/">SUBMIT</button>
+            </div>
+        </form>
+    </div>s
+</body>
+</html>
